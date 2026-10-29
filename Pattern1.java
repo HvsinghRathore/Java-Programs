@@ -8,6 +8,11 @@ public class Pattern1 {
         System.out.print("Enter a number:");
         int num = sc.nextInt();
 
+        if (num < 1) {
+                System.out.println("Number must be at least 1.");
+                return;
+            }
+
         for(int i = 1; i <=num ; i++){
             for(int j = num-i; j > 0; j-- ){
                 System.out.print("   ");
